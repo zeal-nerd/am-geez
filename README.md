@@ -1,6 +1,9 @@
 # am-geez.mim - Custom Keybinding for IBus and ibus-m17n
 
 This repository provides a custom Windows-like keybinding configuration for typing in Amharic (Ge'ez script) using the IBus input method framework and the `ibus-m17n` engine on Linux.
+### Tested on:
+  1. Debian 12
+  2. PopOs
 
 ## What is IBus and ibus-m17n?
 
