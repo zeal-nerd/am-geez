@@ -4,6 +4,7 @@ This repository provides a custom Windows-like keybinding configuration for typi
 ### Tested on:
   1. Debian 12
   2. PopOs
+  3. EndeavourOS
 
 ## What is IBus and ibus-m17n?
 
