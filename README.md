@@ -3,8 +3,8 @@
 This repository provides a custom Windows-like keybinding configuration for typing in Amharic (Ge'ez script) using the IBus input method framework and the `ibus-m17n` engine on Linux.
 ### Tested on:
   1. Debian 12
-  2. PopOs
-  3. EndeavourOS
+  2. PopOs -> based on Ubuntu
+  3. EndeavourOS -> based on Arch linux
 
 ## What is IBus and ibus-m17n?
 
