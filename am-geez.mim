@@ -1,24 +1,109 @@
+;;----------------------------------------------------------------
+;; M17n Phonetic Input Method Configuration for Amharic (Geez)
+;;
+;; Author: Kal (zeal.nerd.kb@gmail.com)
+;; Version: 1.0
+;; Date: 2024-09-16
+;; License: GPL-3.0
+;; 
+;; Description: 
+;; This file defines a phonetic input method (PhonoIM) for the Amharic 
+;; language. The input method maps key sequences to characters based 
+;; on the sounds of the Amharic alphabet, aligning input to spoken 
+;; pronunciations as closely as possible. It is designed to be an 
+;; intuitive typing method for Amharic speakers, leveraging the Ethiopic 
+;; script (Ge'ez).
+;;
+;; Language: Amharic (አማርኛ)
+;; Script: Ethiopic (Ge'ez)
+;;
+;; Requirements:
+;; - M17n library
+;; - Ethiopic Unicode fonts installed
+;;
+;; Compatibility:
+;; - This input method can be used with any input method framework that 
+;;   utilizes the M17n library (such as IBus, Fcitx, and others).
+;;
+;; URL: https://github.com/zeal-nerd/am-geez
+;;
+;; Note:
+;; - This input method maps Amharic characters based on their phonetic 
+;;   sound to make typing easier for native speakers.
+;; - Customize the key sequences as needed to suit your preferences.
+;;----------------------------------------------------------------
+
 (input-method am geez)
 
-(description  "Geez input method")
+(description  "Amharic Geez input method")
 
-(title "Amharic (geez)")
+(title "Amharic(አማ)")
+
+(map
   (map
-    (map
 
-    ;;  Basic vowels
+    ;; Punctuations
+
+    ;; (" " ?፡)
+    ("." ?።)
+    (".." ?.)
+    ("," ?፣)
+    (",," ?፥)
+    (",,," ?,)
+    (";" ?፤)
+    (";;" ?;)
+    ("::" ?፧)
+    (":::" ?፨)
+    (";:" ?፠)
+
+    ;; Geez numerals
+
+    ("1" ?፩) 
+    ("2" ?፪) 
+    ("3" ?፫) 
+    ("4" ?፬) 
+    ("5" ?፭) 
+    ("6" ?፮) 
+    ("7" ?፯) 
+    ("8" ?፰) 
+    ("9" ?፱) 
+    ("10" ?፲) 
+    ("20" ?፳) 
+    ("30" ?፴) 
+    ("40" ?፵) 
+    ("50" ?፶) 
+    ("60" ?፷) 
+    ("70" ?፸) 
+    ("80" ?፹) 
+    ("90" ?፺) 
+    ("100" ?፻)  
+
+    ;;  Basic vowels sounds
 
     ("a" ?አ)
-    ("e" ?እ)
-    ("i" ?ኢ )
-    ("o" ?ኦ)
     ("u" ?ኡ)
-
+    ("i" ?ኢ )
     ("aa" ?ኣ)
     ("aie" ?ኤ)
+    ("ie" ?ኤ)
+    ("e" ?እ)
+    ("o" ?ኦ)
+
+    ("A" ?ዐ)
+    ("U" ?ዑ)
+    ("Au" ?ዑ)
+    ("I" ?ዒ )
+    ("Ai" ?ዒ )
+    ("Aa" ?ዓ)
+    ("Aie" ?ዔ)
+    ("Ie" ?ዔ)
+    ("E" ?ዕ)
+    ("O" ?ዖ)
+    ("Ao" ?ዖ)
+
     ("ee" ?ኧ)
 
-    ;; Consonant-vowel combinations
+    ;; Consonant-vowel combination
 
     ("he" ?ሀ)
     ("hu" ?ሁ)
@@ -28,7 +113,7 @@
     ("h" ?ህ)
     ("ho" ?ሆ)
     ("hua" ?ኋ)
-  
+
     ("le" ?ለ)
     ("lu" ?ሉ)
     ("li" ?ሊ)
@@ -37,7 +122,7 @@
     ("l" ?ል)
     ("lo" ?ሎ)
     ("lua" ?ሏ)
-  
+
     ("hhe" ?ሐ)
     ("hhu" ?ሑ)
     ("hhi" ?ሒ)
@@ -46,7 +131,7 @@
     ("hh" ?ሕ)
     ("hho" ?ሖ)
     ("hhua" ?ሗ)
-  
+
     ("me" ?መ)
     ("mu" ?ሙ)
     ("mi" ?ሚ)
@@ -55,16 +140,16 @@
     ("m" ?ም)
     ("mo" ?ሞ)
     ("mua" ?ሟ)
-  
-    ("`sse" ?ሠ)
-    ("`ssu" ?ሡ)
-    ("`ssi" ?ሢ)
-    ("`ssa" ?ሣ)
-    ("`ssie" ?ሤ)
-    ("`ss" ?ሥ)
-    ("`sso" ?ሦ)
-    ("`ssua" ?ሧ)
-  
+
+    ("sse" ?ሠ)
+    ("ssu" ?ሡ)
+    ("ssi" ?ሢ)
+    ("ssa" ?ሣ)
+    ("ssie" ?ሤ)
+    ("ss" ?ሥ)
+    ("sso" ?ሦ)
+    ("ssua" ?ሧ)
+
     ("re" ?ረ)
     ("ru" ?ሩ)
     ("ri" ?ሪ)
@@ -73,7 +158,7 @@
     ("r" ?ር)
     ("ro" ?ሮ)
     ("rua" ?ሯ)
-  
+
     ("se" ?ሰ)
     ("su" ?ሱ)
     ("si" ?ሲ)
@@ -82,7 +167,7 @@
     ("s" ?ስ)
     ("so" ?ሶ)
     ("sua" ?ሷ)
-  
+
     ("Se" ?ሸ)
     ("Su" ?ሹ)
     ("Si" ?ሺ)
@@ -91,7 +176,7 @@
     ("S" ?ሽ)
     ("So" ?ሾ)
     ("Sua" ?ሿ)
-  
+
     ("xe" ?ሸ)
     ("xu" ?ሹ)
     ("xi" ?ሺ)
@@ -100,7 +185,7 @@
     ("x" ?ሽ)
     ("xo" ?ሾ)
     ("xua" ?ሿ)
-  
+
     ("qe" ?ቀ)
     ("qu" ?ቁ)
     ("qi" ?ቂ)
@@ -109,7 +194,7 @@
     ("q" ?ቅ)
     ("qo" ?ቆ)
     ("qua" ?ቋ)
-  
+
     ("Qe" ?ቐ)
     ("Qu" ?ቑ)
     ("Qi" ?ቒ)
@@ -118,7 +203,7 @@
     ("Q" ?ቕ)
     ("Qo" ?ቖ)
     ("Qua" ?ቛ)
-  
+
     ("be" ?በ)
     ("bu" ?ቡ)
     ("bi" ?ቢ)
@@ -127,7 +212,7 @@
     ("b" ?ብ)
     ("bo" ?ቦ)
     ("bua" ?ቧ)
-  
+
     ("te" ?ተ)
     ("tu" ?ቱ)
     ("ti" ?ቲ)
@@ -136,7 +221,7 @@
     ("t" ?ት)
     ("to" ?ቶ)
     ("tua" ?ቷ)
-  
+
     ("ce" ?ቸ)
     ("cu" ?ቹ)
     ("ci" ?ቺ)
@@ -145,7 +230,7 @@
     ("c" ?ች)
     ("co" ?ቾ)
     ("cua" ?ቿ)
-  
+
     ("He" ?ኀ)
     ("Hu" ?ኁ)
     ("Hi" ?ኂ)
@@ -153,8 +238,8 @@
     ("Hie" ?ኄ)
     ("H" ?ኅ)
     ("Ho" ?ኆ)
-    ("Hua'" ?ኋ)
-  
+    ("Hua" ?ኋ)
+
     ("ne" ?ነ)
     ("nu" ?ኑ)
     ("ni" ?ኒ)
@@ -163,7 +248,7 @@
     ("n" ?ን)
     ("no" ?ኖ)
     ("nua" ?ኗ)
-  
+
     ("Ne" ?ኘ)
     ("Nu" ?ኙ)
     ("Ni" ?ኚ)
@@ -173,6 +258,15 @@
     ("No" ?ኞ)
     ("Nua" ?ኟ)
 
+    ("Ge" ?ኘ)
+    ("Gu" ?ኙ)
+    ("Gi" ?ኚ)
+    ("Ga" ?ኛ)
+    ("Gie" ?ኜ)
+    ("G" ?ኝ)
+    ("Go" ?ኞ)
+    ("Gua" ?ኟ)
+
     ("ke" ?ከ)
     ("ku" ?ኩ)
     ("ki" ?ኪ)
@@ -181,7 +275,7 @@
     ("k" ?ክ)
     ("ko" ?ኮ)
     ("kua" ?ኳ)
-  
+
     ("Ke" ?ኸ)
     ("Ku" ?ኹ)
     ("Ki" ?ኺ)
@@ -198,16 +292,7 @@
     ("wie" ?ዌ)
     ("w" ?ው)
     ("wo" ?ዎ)
-    
-    ("A" ?ዐ)
-    ("`Au" ?ዑ)
-    ("`Ai" ?ዒ)
-    ("Aa" ?ዓ)
-    ("Aie" ?ዔ)
-    ("E" ?ዕ)
-    ("O" ?ዖ)
-    ("Ao" ?ዖ)
-  
+
     ("ze" ?ዘ)
     ("zu" ?ዙ)
     ("zi" ?ዚ)
@@ -216,7 +301,7 @@
     ("z" ?ዝ)
     ("zo" ?ዞ)
     ("zua" ?ዟ)
-  
+
     ("Ze" ?ዠ)
     ("Zu" ?ዡ)
     ("Zi" ?ዢ)
@@ -225,7 +310,7 @@
     ("Z" ?ዥ)
     ("Zo" ?ዦ)
     ("Zua" ?ዧ)
-  
+
     ("ye" ?የ)
     ("yu" ?ዩ)
     ("yi" ?ዪ)
@@ -233,7 +318,7 @@
     ("yie" ?ዬ)
     ("y" ?ይ)
     ("yo" ?ዮ)
-  
+
     ("de" ?ደ)
     ("du" ?ዱ)
     ("di" ?ዲ)
@@ -242,7 +327,7 @@
     ("d" ?ድ)
     ("do" ?ዶ)
     ("dua" ?ዷ)
-  
+
     ("De" ?ዸ)
     ("Du" ?ዹ)
     ("Di" ?ዺ)
@@ -251,7 +336,7 @@
     ("D" ?ዽ)
     ("Do" ?ዾ)
     ("Dua" ?ዿ)
-  
+
     ("je" ?ጀ)
     ("ju" ?ጁ)
     ("ji" ?ጂ)
@@ -260,7 +345,7 @@
     ("j" ?ጅ)
     ("jo" ?ጆ)
     ("jua" ?ጇ)
-  
+
     ("ge" ?ገ)
     ("gu" ?ጉ)
     ("gi" ?ጊ)
@@ -269,7 +354,7 @@
     ("g" ?ግ)
     ("go" ?ጎ)
     ("gua" ?ጓ)
-  
+
     ("Te" ?ጠ)
     ("Tu" ?ጡ)
     ("Ti" ?ጢ)
@@ -278,7 +363,7 @@
     ("T" ?ጥ)
     ("To" ?ጦ)
     ("Tua" ?ጧ)
-  
+
     ("Ce" ?ጨ)
     ("Cu" ?ጩ)
     ("Ci" ?ጪ)
@@ -287,7 +372,7 @@
     ("C" ?ጭ)
     ("Co" ?ጮ)
     ("Cua" ?ጯ)
-  
+
     ("Pe" ?ጰ)
     ("Pu" ?ጱ)
     ("Pi" ?ጲ)
@@ -296,7 +381,7 @@
     ("P" ?ጵ)
     ("Po" ?ጶ)
     ("Pua" ?ጷ)
-  
+
     ("tse" ?ጸ)
     ("tsu" ?ጹ)
     ("tsi" ?ጺ)
@@ -305,7 +390,7 @@
     ("ts" ?ጽ)
     ("tso" ?ጾ)
     ("tsua" ?ጿ)
-  
+
     ("tsse" ?ፀ)
     ("tssu" ?ፁ)
     ("tssi" ?ፂ)
@@ -313,7 +398,7 @@
     ("tssie" ?ፄ)
     ("tss" ?ፅ)
     ("tsso" ?ፆ)
-  
+
     ("fe" ?ፈ)
     ("fu" ?ፉ)
     ("fi" ?ፊ)
@@ -322,7 +407,7 @@
     ("f" ?ፍ)
     ("fo" ?ፎ)
     ("fua" ?ፏ)
-  
+
     ("pe" ?ፐ)
     ("pu" ?ፑ)
     ("pi" ?ፒ)
@@ -331,7 +416,7 @@
     ("p" ?ፕ)
     ("po" ?ፖ)
     ("pua" ?ፗ)
-  
+
     ("ve" ?ቨ)
     ("vu" ?ቩ)
     ("vi" ?ቪ)
@@ -340,15 +425,10 @@
     ("v" ?ቭ)
     ("vo" ?ቮ)
     ("vua" ?ቯ)
-  
-    ("." ?።)
-    ("," ?፣)
-    (":" ?፥)
-    (";" ?፤)
-    (":-" ?፦)
-  
-  ))
+
+  )
+)
 
 (state
- (init
-  (map)))
+ (init (map))
+  )
