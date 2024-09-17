@@ -5,8 +5,8 @@ This repository provides a custom phonetic Windows-like keybinding configuration
 This configuration is designed to closely match the sounds of Amharic characters, making typing easier. While not all sounds are an exact match, the phonetic approach helps create a more intuitive way to input characters
 
 ### Useful links:
-   - [Binding Docs](./docs/guidlines.md)
-   - [Examples](https://github.com/zeal-nerd/am-geez/new/main#examples)
+   - [Binding Docs](/docs/guidelines.md)
+   - [Examples](/docs/guidelines.md#examples)
    - [Download Key Bindings](https://github.com/user-attachments/files/17029134/kbd.pdf)
 
 ### ✅ Tested on:
