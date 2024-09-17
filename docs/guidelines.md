@@ -20,7 +20,7 @@ You can find the pdf 📄 [here](https://github.com/user-attachments/files/17029
 #### 🔢 Amharic Number System:
   This input method supports the default Amharic numbering system, with the corresponding key as showen in the above image.
 
-## 📚 Examples
+## 📚Examples
 Below you have an example poem written in both the Amharic script and the keybinding version.
   ```text
   **Amharic version**
