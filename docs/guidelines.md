@@ -31,7 +31,7 @@ Below you have an example poem written in both the Amharic script and the keybin
       ለምንኖርበት ምክኒያት ሲኖረን ነው።
 
   **Key binding version**
-yemeTanbetn telkom banawuqequ
+yemeTanbetn telkom banawuqew
 melkamun ensra trgum endinorew
 
       lemenor trgumu smiet yemiseTew
